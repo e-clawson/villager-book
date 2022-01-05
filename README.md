@@ -1,3 +1,8 @@
+ <!-- notes on what to include in the readme - 
+project description What is this project about 
+installation guide (fork, clone, run npm install, etc.)
+contributing and license section - makeareadme.com - add default template -->
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
