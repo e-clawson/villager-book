@@ -1,9 +1,10 @@
 import './App.css';
+import './db.json';
 
-function App() {
+function App(villagers) {
   return (
     <div className="App">
-      <h1> </h1>
+      console.log(villagers);
 
     </div>
   );
