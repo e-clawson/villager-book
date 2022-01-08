@@ -1,13 +1,12 @@
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import { VillagerForm } from './Villagers/VillagerForm';
+import { VillagerForm } from './villagers/VillagerForm';
 import { VillagerContainer } from '../containers/VillagerContainer';
-import { Home } from '../Home';
-import { VillagerCard } from './Villagers/VillagerCard';
+import { VillagerCard } from './villagers/VillagerCard';
 import {Navbar} from './navigation/Navbar';
 import {Header} from './navigation/Header';
-import {Home} from './Home';
-import {About} from './About';
+import {Home} from '../Home';
+import {About} from './navigation/About';
 
 
 function App() {
