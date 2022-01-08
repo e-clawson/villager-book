@@ -4,18 +4,22 @@ installation guide (fork, clone, run npm install, etc.)
 contributing and license section - makeareadme.com - add default template -->
 # VillagerBook
 
+Text here about project 
 include blog link, include video link (if youre an overachiever - include a gif of you in your readme)
 
 ## Description
 
 ### Installation
 
+- fork and clone the repo 
+- cd into project and run npm install
+- run the json server with: npm run server
+- run the react server with: npm start 
 https://www.makeareadme.com/
-- run
-- install - step by step usage and installation guide 
-- 
 
 ## Contributing
+
+
 
 ## License 
 mit license? 
