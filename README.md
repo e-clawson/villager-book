@@ -2,6 +2,27 @@
 project description What is this project about 
 installation guide (fork, clone, run npm install, etc.)
 contributing and license section - makeareadme.com - add default template -->
+# VillagerBook
+
+include blog link, include video link (if youre an overachiever - include a gif of you in your readme)
+
+## Description
+
+### Installation
+
+https://www.makeareadme.com/
+- run
+- install - step by step usage and installation guide 
+- 
+
+## Contributing
+
+## License 
+mit license? 
+# Acknowledgements 
+- API
+- MATTEO and Flatiron 
+
 
 # Getting Started with Create React App
 
