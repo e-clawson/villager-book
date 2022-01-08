@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-        <Header />
+        <Header slogan= "Keep Track of Your ACNH Friends!" storeName="VillagerBook"/>
         <Switch>
           <Route path="/villagers/new">
             <VillagerForm />

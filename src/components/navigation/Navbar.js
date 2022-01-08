@@ -1,9 +1,12 @@
 import { NavLink } from "react-router-dom";
 
 const style = {
-    width: "80%",
+    width: "100%",
     margin: "5% 0 1%",
-    padding: "1em"
+    padding: "1em",
+    textDecoration: "none",
+    backgroundColor: "lightGreen",
+    verticalAlign: "center",
 };
 
 export const Navbar = () => {
@@ -37,7 +40,7 @@ export const Navbar = () => {
                 exact 
                 style={style}
                 to="/villagers/current"
-           >CurrentVillagers</NavLink>
+           >Current Villagers</NavLink>
 
             <NavLink
            activeStyle={{
@@ -46,10 +49,10 @@ export const Navbar = () => {
            }}
                 exact 
                 style={style}
-                to="/villagers/former"
+                to="/villagers/formervillagers"
            >Former Villagers</NavLink>
 
-        <NavLink
+            <NavLink
            activeStyle={{
                fontWeight:"bolder",
                color: "green"
