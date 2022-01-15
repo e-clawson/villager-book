@@ -1,8 +1,12 @@
+import { useState } from "react"
 
-export const VillagerFilter = () => {
+export const VillagerFilter = ({handleSearch}) => {
+    
     return (
         <div>
-            <input type="text" placeholder="Type a Villager's Name"/>
+            <input type="text" placeholder="Search Villagers"
+            onChange={e => handleSearch(e.target.value)}/>
+
         </div>
     )
 }

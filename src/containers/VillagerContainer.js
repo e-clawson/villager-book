@@ -1,11 +1,11 @@
 import { useState, useEffect} from "react";
-import { VillagerCard } from "../components/villagers/VillagerCard";
 import { VillagerFilter } from "../components/villagers/VillagerFilter";
 import { VillagerForm } from "../components/villagers/VillagerForm";
 import { VillagerList } from "../components/villagers/VillagerList";
 
 export const VillagerContainer = () => {
     const [villagers, setVillagers] = useState([])
+    const [filteredVillagers, setFilteredVillagers] = useState(villagers)
 
     const fetchData = async() => {
         try {
@@ -21,9 +21,20 @@ export const VillagerContainer = () => {
         fetchData();
     }, [])
 
+    const handleSearch = (searchValue) => {
+        
+        filteredVillagers = villagers.filter(villager => villager.name.toLowerCase().startsWith(searchValue.toLowerCase()))
+        console.log(filteredVillagers)
+
+        //filter  full list based on typed input 
+        //update filteredCharacters using new array returned by filter
+
+    }
+    
+
     return (
         <div>
-            <VillagerFilter />
+            <VillagerFilter handleSearch= {handleSearch}/>
             <VillagerList villagers={villagers} />
             <VillagerForm />
         </div>
