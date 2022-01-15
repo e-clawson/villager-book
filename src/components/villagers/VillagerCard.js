@@ -1,9 +1,10 @@
+import './Villager.css'
 
 export const VillagerCard = ({villager}) => {
     return (
-        <div style={{border: "solid", width: "20%" }}>
-            <img src={villager.image_uri} alt={villager.name} />
+        <div className= "villager-card">
             <h2>Name: {villager.name.nameUSen}</h2>
+            <img src={villager.image_uri} alt={villager.name} />
             <h4>Species: {villager.species}</h4>
             <h4>Gender: {villager.gender}</h4>
             <h4>Birthday: {villager.birthday}</h4>

@@ -1,0 +1,10 @@
+
+.villager-card{
+    border: solid;
+    width: 20%;
+    margin: auto;
+}
+
+.img {
+    max-width: 100%;
+}
