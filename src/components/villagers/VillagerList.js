@@ -5,7 +5,8 @@ export const VillagerList = ({villagers}) => {
 
     return (
         <div>
-          {villagersCards}
+            <h2>Villagers</h2>
+            <div style = {{display:'flex', flexWrap:'wrap'}}>{villagersCards}</div>
         </div>
     )
 }

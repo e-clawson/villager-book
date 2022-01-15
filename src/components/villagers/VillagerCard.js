@@ -1,7 +1,7 @@
 
 export const VillagerCard = ({villager}) => {
     return (
-        <div>
+        <div style={{border: "solid", width: "20%" }}>
             <img src={villager.image_uri} alt={villager.name} />
             <h2>Name: {villager.name.nameUSen}</h2>
             <h4>Species: {villager.species}</h4>
