@@ -16,7 +16,6 @@ function App() {
       <Router>
         <Navbar />
         <Header slogan= "Keep Track of Your ACNH Friends!" storeName="VillagerBook"/>
-        <Footer />
         <Switch>
           <Route path="/villagers/new">
             <VillagerForm />
@@ -39,6 +38,7 @@ function App() {
           </Route>
 
         </Switch>
+        <Footer />
       </Router>
     </div>
   );

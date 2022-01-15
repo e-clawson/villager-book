@@ -1,12 +1,11 @@
-import React from 'react'
 import { VillagerCard } from './VillagerCard'
 
 export const VillagerList = ({villagers}) => {
-    const villagersCards = villagers.map(villager => <VillagerCard villager={villager} />)
+    const villagersCards = villagers.map(villager => <VillagerCard villager={villager} key={villager.id}/>)
 
     return (
         <div>
-            {villagersCards}
+          {villagersCards}
         </div>
     )
 }

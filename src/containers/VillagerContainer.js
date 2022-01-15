@@ -26,7 +26,6 @@ export const VillagerContainer = () => {
             <VillagerFilter />
             <VillagerList villagers={villagers} />
             <VillagerForm />
-            <VillagerCard villagers={villagers}/>
         </div>
     )
 }
