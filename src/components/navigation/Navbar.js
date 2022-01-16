@@ -19,7 +19,7 @@ export const Navbar = () => {
            }}
                 exact 
                 style={style}
-                to="/"
+                to="/villagers"
            >Home</NavLink> 
 
             <NavLink
