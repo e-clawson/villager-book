@@ -5,6 +5,12 @@ export const VillagerCard = ({villager}) => {
         <div className= "villager-card">
             <h2>Name: {villager.name.nameUSen}</h2>
             <img src={villager.image_uri} alt={villager.name} />
+            <button>🏠</button>
+            <button>⬅️ 🕦</button>
+            <button>💖</button>
+            <button>⛺</button>
+            <button>🖼️</button>
+            <button>🌴</button>
             <h4>Species: {villager.species}</h4>
             <h4>Gender: {villager.gender}</h4>
             <h4>Birthday: {villager.birthday}</h4>
