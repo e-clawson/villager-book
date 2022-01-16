@@ -13,7 +13,7 @@ include blog link, include video link (if youre an overachiever - include a gif 
 
 - fork and clone the repo 
 - cd into project and run npm install
-- run the json server with: npm run server
+- run the json server with: "json-server --watch db.json -p 3001"
 - run the react server with: npm start 
 https://www.makeareadme.com/
 
