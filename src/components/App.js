@@ -11,6 +11,10 @@ import {Footer} from './navigation/Footer';
 
 
 function App() {
+
+  const handleClick = e => {}
+    debugger
+
   return (
     <div className="App">
       <Router>

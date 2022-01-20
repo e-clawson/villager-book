@@ -23,7 +23,7 @@ export const VillagerContainer = () => {
     }, [])
 
     const handleSearch = (searchValue) => {
-        const filteredVillagers = villagers.filter(villager => villager.hobby.toLowerCase().startsWith(searchValue.toLowerCase()))
+        const filteredVillagers = villagers.filter(villager => villager.name["name-USen"].toLowerCase().startsWith(searchValue.toLowerCase()))
         
         setFilteredVillagers(filteredVillagers)
     }
