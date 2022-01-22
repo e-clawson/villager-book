@@ -53,7 +53,6 @@ export const Navbar = () => {
            >Former Villagers</NavLink>
 
             <NavLink 
-            // onClick={setFavoriteView(bool => !bool)}
            activeStyle={{
                fontWeight:"bolder",
                color: "green"

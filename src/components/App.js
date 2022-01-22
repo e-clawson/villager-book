@@ -1,6 +1,5 @@
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import { VillagerForm } from './villagers/VillagerForm';
 import { VillagerContainer } from '../containers/VillagerContainer';
 import { VillagerCard } from './villagers/VillagerCard';
 import {Navbar} from './navigation/Navbar';
@@ -18,12 +17,13 @@ function App() {
         <Navbar />
         <Header slogan= "Keep Track of Your ACNH Friends!" storeName="VillagerBook"/>
         <Switch>
-          <Route path="/villagers/new">
-            <VillagerForm />
-          </Route>
 
           <Route path="/about">
             <About />
+          </Route>
+
+          <Route path="/favorites">
+            <Home />
           </Route>
 
           <Route path="/">
