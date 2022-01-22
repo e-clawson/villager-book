@@ -5,6 +5,9 @@
     margin: auto;
 }
 
-.img {
-    max-width: 100%;
+.image_uri{
+    max-width: 20%;
+    width: auto;
+    height: auto;
+    display: flex;
 }

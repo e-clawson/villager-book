@@ -19,7 +19,7 @@ export const Navbar = () => {
            }}
                 exact 
                 style={style}
-                to="/villagers"
+                to="/"
            >Home</NavLink> 
 
             <NavLink
@@ -52,7 +52,8 @@ export const Navbar = () => {
                 to="/villagers/formervillagers"
            >Former Villagers</NavLink>
 
-            <NavLink
+            <NavLink 
+            // onClick={setFavoriteView(bool => !bool)}
            activeStyle={{
                fontWeight:"bolder",
                color: "green"

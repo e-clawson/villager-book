@@ -4,8 +4,8 @@ export const VillagerCard = ({villager}) => {
     return (
         <div className= "villager-card">
             <h2>Name: {villager.name["name-USen"]}</h2>
-            <img src={villager.image_uri} alt={villager.name} />
-            <button>🏠</button>
+            <img src={villager.image_uri} alt={villager.name["name-USen"]} />
+            <button >🏠</button>
             <button>⬅️ 🕦</button>
             <button>💖</button>
             <button>⛺</button>
@@ -18,16 +18,7 @@ export const VillagerCard = ({villager}) => {
             <h4>Personality: {villager.personality}</h4>
             <h4>Catch-Phrase:{villager.catchphrase}</h4>
             <h4>Saying: "{villager.saying}"</h4>
-            <h4>Favorite Color: {villager.bubblecolor}</h4>
-
+            {/* <h4>Favorite Color: {villager.bubblecolor}</h4> */}
         </div>
     )
 }
-
-// **want to make a button that when clicked, 
-//causes that villagerCard to display under the correct page 
-// 1. make buttons - check
-// *data is modified when we click the button - we need the click to be stored (until page refresh?)
-// 2. make a clickevent - handleClick or onClick 
-// 3. make it so when that handleclick is triggered it 
-//displays on the correct page - how do I do this? 

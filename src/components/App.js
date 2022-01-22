@@ -12,9 +12,6 @@ import {Footer} from './navigation/Footer';
 
 function App() {
 
-  const handleClick = e => {}
-    debugger
-
   return (
     <div className="App">
       <Router>
@@ -23,14 +20,6 @@ function App() {
         <Switch>
           <Route path="/villagers/new">
             <VillagerForm />
-          </Route>
-
-          <Route path="/villagers/:id">
-            <VillagerCard />
-          </Route>
-
-          <Route path="/villagers">
-            <VillagerContainer />
           </Route>
 
           <Route path="/about">
