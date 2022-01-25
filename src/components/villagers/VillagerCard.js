@@ -1,6 +1,7 @@
 import './Villager.css'
  
 export const VillagerCard = ({villager, addToFavorites}) => {
+
     return (
         <div className= "villager-card">
             <h2>Name: {villager.name["name-USen"]}</h2>
@@ -18,7 +19,6 @@ export const VillagerCard = ({villager, addToFavorites}) => {
             <h4>Personality: {villager.personality}</h4>
             <h4>Catch-Phrase:{villager.catchphrase}</h4>
             <h4>Saying: "{villager.saying}"</h4>
-            {/* <h4>Favorite Color: {villager.bubblecolor}</h4> */}
         </div>
     )
 }

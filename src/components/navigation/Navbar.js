@@ -32,65 +32,16 @@ export const Navbar = () => {
                 to="/about"
            >About</NavLink>
 
-            <NavLink
+<NavLink
            activeStyle={{
                fontWeight:"bolder",
                color: "green"
            }}
                 exact 
                 style={style}
-                to="/villagers/current"
-           >Current Villagers</NavLink>
-
-            <NavLink
-           activeStyle={{
-               fontWeight:"bolder",
-               color: "green"
-           }}
-                exact 
-                style={style}
-                to="/villagers/formervillagers"
-           >Former Villagers</NavLink>
-
-            <NavLink 
-           activeStyle={{
-               fontWeight:"bolder",
-               color: "green"
-           }}
-                exact 
-                style={style}
-                to="/villagers/favorite"
-           >Favorite Villagers</NavLink>
-
-            <NavLink
-           activeStyle={{
-               fontWeight:"bolder",
-               color: "green"
-           }}
-                exact 
-                style={style}
-                to="/villagers/visitors"
-           >Campsite Visitors</NavLink>
-
-            <NavLink
-           activeStyle={{
-               fontWeight:"bolder",
-               color: "green"
-           }}
-                exact 
-                style={style}
-                to="/villagers/photos"
-           >Villager Photos</NavLink>
-
-            <NavLink
-           activeStyle={{
-               fontWeight:"bolder",
-               color: "green"
-           }}
-                exact 
-                style={style}
-                to="/villagers/happyhomes"
-           >Happy Homes</NavLink>
+                to="/newvillager"
+           >New Villager</NavLink>
+           
         </div>
     )
 }

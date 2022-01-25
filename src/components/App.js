@@ -1,13 +1,11 @@
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import { VillagerContainer } from '../containers/VillagerContainer';
-import { VillagerCard } from './villagers/VillagerCard';
 import {Navbar} from './navigation/Navbar';
 import {Header} from './navigation/Header';
 import {Home} from '../Home';
 import {About} from './navigation/About';
 import {Footer} from './navigation/Footer';
-
+import {NewVillager} from './villagers/NewVillager';
 
 function App() {
 
@@ -22,8 +20,8 @@ function App() {
             <About />
           </Route>
 
-          <Route path="/favorites">
-            <Home />
+          <Route path="/newvillager">
+            <NewVillager />
           </Route>
 
           <Route path="/">
