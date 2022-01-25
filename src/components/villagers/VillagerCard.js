@@ -4,7 +4,7 @@ export const VillagerCard = ({villager, addToFavorites}) => {
 
     return (
         <div className= "villager-card">
-            <h2>Name: {villager.name["name-USen"]}</h2>
+            <h2>Name: {villager.name["name-USen"] || villager.name}</h2>
             <img src={villager.image_uri} alt={villager.name["name-USen"]} />
             <button >🏠</button>
             <button>⬅️ 🕦</button>

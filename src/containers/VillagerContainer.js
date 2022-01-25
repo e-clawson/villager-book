@@ -27,7 +27,7 @@ export const VillagerContainer = () => {
     }, [])
 
     const handleSearch = (searchValue) => {
-        const filteredVillagers = villagers.filter(villager => villager.name["name-USen"].toLowerCase().startsWith(searchValue.toLowerCase()))
+        const filteredVillagers = villagers.filter(villager => (villager.name["name-USen"] || villager.name).toLowerCase().startsWith(searchValue.toLowerCase()))
         setFilteredVillagers(filteredVillagers)
     }
 
@@ -42,7 +42,7 @@ export const VillagerContainer = () => {
         <div>
             <VillagerFilter handleSearch={handleSearch}/>
             <button onClick={() => setFavoriteView(bool => !bool)}> Favorites 💖</button>
-            {!!favoriteView ? <VillagerList villagers={favoriteVillagers} addToFavorites={addToFavorites}/>: <VillagerList villagers={filteredVillagers} addToFavorites={addToFavorites}/>}
+            <VillagerList villagers={favoriteView ? favoriteVillagers : filteredVillagers} addToFavorites={addToFavorites}/>
         </div> 
     )
 }

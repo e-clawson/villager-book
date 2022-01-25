@@ -12,15 +12,15 @@ export const NewVillager = () => {
     const [hobby, setHobby] = useState("")
     const [catchphrase, setCatchphrase] = useState("")
     const [saying, setSaying] = useState("")
-    const [image, setImage] = useState("")
+    const [image_uri, setimage_uri] = useState("")
 
     const handleSubmit = e => {
         e.preventDefault()
-        if ([name, personality, birthday, species, gender, hobby, catchphrase, saying, image].some(val => val.trim() === "")) {
+        if ([name, personality, birthday, species, gender, hobby, catchphrase, saying, image_uri].some(val => val.trim() === "")) {
             alert("Please fill out all the fields, thank you!!!")
             return null
         }
-        const newVillager = {name, personality, birthday, species, gender, hobby, catchphrase, saying, image}
+        const newVillager = {name, personality, birthday, species, gender, hobby, catchphrase, saying, image_uri}
         fetch("http://localhost:3001/villagers", {
             method: "POST",
             headers: {
@@ -36,7 +36,7 @@ export const NewVillager = () => {
         setHobby("")
         setCatchphrase("")
         setSaying("")
-        setImage("")
+        setimage_uri("")
         history.push("/villagers")
     }
 
@@ -59,8 +59,8 @@ export const NewVillager = () => {
                 <input onChange={e => setCatchphrase(e.target.value)} type="text" name="catchphrase" id="catch-phrase" value={catchphrase} required/><br /><br />
                 <label htmlFor="saying">Saying</label>
                 <input onChange={e => setSaying(e.target.value)} type="text" name="saying" id="saying" value={saying} required/><br /><br />
-                <label htmlFor="image">Image</label>
-                <input onChange={e => setImage(e.target.value)} type="text" name="image" id="image-uri" value={image} required/><br /><br />
+                <label htmlFor="image_uri">image_uri</label>
+                <input onChange={e => setimage_uri(e.target.value)} type="text" name="image_uri" id="image_uri-uri" value={image_uri} required/><br /><br />
                 <input type="submit" value="Create" />
             </form>
         </div>
