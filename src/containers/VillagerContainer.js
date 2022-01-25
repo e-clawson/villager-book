@@ -1,13 +1,12 @@
 import { useState, useEffect} from "react";
 import { VillagerFilter } from "../components/villagers/VillagerFilter";
 import { VillagerList } from "../components/villagers/VillagerList";
-import {Favorites} from "../hooks/Favorites";
 
 export const VillagerContainer = () => {
     const [villagers, setVillagers] = useState([])
     const [filteredVillagers, setFilteredVillagers] = useState(villagers)
-    // const [favoriteView, setFavoriteView] = useState([])
-    // const [favoriteVillagers, setFavoriteVillagers] = useState([])
+    const [favoriteView, setFavoriteView] = useState(false)
+    const [favoriteVillagers, setFavoriteVillagers] = useState([])
 
     const fetchData = async() => {
         try {
@@ -50,8 +49,9 @@ export const VillagerContainer = () => {
     return(
         <div>
             <VillagerFilter handleSearch={handleSearch}/>
-            <button onClick={<Favorites />}> Favorites 💖</button>
-            <VillagerList villagers={filteredVillagers} />
+            <button onClick={() => setFavoriteView(bool => !bool)}> Favorites 💖</button>
+            {!!favoriteView ? <VillagerList villagers={filteredVillagers}/>: <VillagerList villagers={favoriteVillagers}/>}
+            
         </div>
     )
 }
