@@ -6,7 +6,7 @@ export const VillagerContainer = () => {
     const [villagers, setVillagers] = useState([])
     const [filteredVillagers, setFilteredVillagers] = useState(villagers)
     const [favoriteView, setFavoriteView] = useState(false)
-    const [favoriteVillagers, setFavoriteVillagers] = useState([])
+    const [favoriteVillagers, setFavoriteVillagers] = useState(villagers)
 
     const fetchData = async() => {
         try {
@@ -30,6 +30,12 @@ export const VillagerContainer = () => {
         setFilteredVillagers(filteredVillagers)
     }
 
+    const addToFavorites = (villager) => {
+        if (!favoriteVillagers.find(el => el.id === villager.id)) {
+            setFavoriteVillagers(favoriteVillagers => [...favoriteVillagers, villager])
+        alert(`${villager.name["name-USen"]} was added to favorites!`)
+        }
+    }
     // const onAdd = (favoriteVillagers) => {
     //     const exist = favoriteView.find((favorites) => favorite.id === villager.id);
     //     if (exist) {
@@ -50,8 +56,7 @@ export const VillagerContainer = () => {
         <div>
             <VillagerFilter handleSearch={handleSearch}/>
             <button onClick={() => setFavoriteView(bool => !bool)}> Favorites 💖</button>
-            {!!favoriteView ? <VillagerList villagers={filteredVillagers}/>: <VillagerList villagers={favoriteVillagers}/>}
-            
+            {!!favoriteView ? <VillagerList villagers={favoriteVillagers} addToFavorites={addToFavorites}/>: <VillagerList villagers={filteredVillagers} addToFavorites={addToFavorites}/>}
         </div>
     )
 }

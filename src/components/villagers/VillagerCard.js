@@ -1,13 +1,13 @@
 import './Villager.css'
-
-export const VillagerCard = ({villager}) => {
+ 
+export const VillagerCard = ({villager, addToFavorites}) => {
     return (
         <div className= "villager-card">
             <h2>Name: {villager.name["name-USen"]}</h2>
             <img src={villager.image_uri} alt={villager.name["name-USen"]} />
             <button >🏠</button>
             <button>⬅️ 🕦</button>
-            <button>💖</button>
+            <button onClick={() => addToFavorites(villager)}>💖</button>
             <button>⛺</button>
             <button>🖼️</button>
             <button>🌴</button>
