@@ -343,29 +343,5 @@
         "catch-EUru": "уф-уф"
       }
     },
-    {
-      "name": "bubbles",
-      "personality": "sisterly",
-      "birthday": "6/5",
-      "species": "anteater",
-      "gender": "female",
-      "hobby": "education",
-      "catchphrase": "\"what's popping?\"",
-      "saying": "\"blub blub\"",
-      "image": "https://acnhapi.com/v1/icons/villagers/2",
-      "id": 8
-    },
-    {
-      "name": "bubbles",
-      "personality": "sisterly",
-      "birthday": "6/5",
-      "species": "anteater",
-      "gender": "female",
-      "hobby": "education",
-      "catchphrase": "\"what's popping?\"",
-      "saying": "\"blub blub\"",
-      "image": "https://acnhapi.com/v1/icons/villagers/2",
-      "id": 9
-    }
   ]
 }
