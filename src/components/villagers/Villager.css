@@ -3,9 +3,10 @@
     border: solid;
     width: 20%;
     margin: auto;
+    background-color: azure;
 }
 
-.image_uri{
+img.src{
     max-width: 20%;
     width: auto;
     height: auto;

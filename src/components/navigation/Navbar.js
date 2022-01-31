@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import './Navigation.css';
 
 const style = {
     width: "100%",

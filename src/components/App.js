@@ -2,7 +2,7 @@ import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import {Navbar} from './navigation/Navbar';
 import {Header} from './navigation/Header';
-import {Home} from '../Home';
+import {Home} from './Home';
 import {About} from './navigation/About';
 import {Footer} from './navigation/Footer';
 import {NewVillager} from './villagers/NewVillager';

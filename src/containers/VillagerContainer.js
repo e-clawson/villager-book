@@ -1,7 +1,6 @@
 import { useState, useEffect} from "react";
 import { VillagerFilter } from "../components/villagers/VillagerFilter";
 import { VillagerList } from "../components/villagers/VillagerList";
-import { Favorites } from "../hooks/Favorites";
 
 export const VillagerContainer = () => {
     const [villagers, setVillagers] = useState([])
@@ -9,13 +8,18 @@ export const VillagerContainer = () => {
     const [favoriteView, setFavoriteView] = useState(false)
     const [favoriteVillagers, setFavoriteVillagers] = useState(villagers)
 
-
     const fetchData = async() => {
         try {
+            
             const resp = await fetch("http://localhost:3001/villagers")
             const data = await resp.json()
-            setVillagers(data) 
-            setFilteredVillagers(data)
+            const fetchedVillagers = new Array;
+            for(var curVillager in data[0]) {
+                fetchedVillagers.push(data[0][curVillager])
+            }
+            
+            setVillagers(fetchedVillagers) 
+            setFilteredVillagers(fetchedVillagers)
         } catch (error) {
             const err = new Error(error)
           alert(err)  

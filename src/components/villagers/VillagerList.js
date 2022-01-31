@@ -1,7 +1,7 @@
 import { VillagerCard } from './VillagerCard'
 
 export const VillagerList = ({villagers, addToFavorites}) => {
-    const villagersCards = villagers.map(villager => <VillagerCard villager={villager} key={villager.id} addToFavorites={addToFavorites}/>)
+    const villagersCards = villagers.map(villager => <VillagerCard villager={villager} key={villager.id} addToFavorites={addToFavorites}/> )
 
     return (
         <div>

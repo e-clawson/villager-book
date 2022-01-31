@@ -1,4 +1,4 @@
-import { VillagerContainer } from "./containers/VillagerContainer"
+import { VillagerContainer } from "../containers/VillagerContainer"
 
 export const Home = () => {
     return (
