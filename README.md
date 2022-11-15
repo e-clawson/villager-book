@@ -8,6 +8,8 @@ Villagers display on the homepage with some basic information including name, im
 This App uses data from the ACNH API which can be found here: http://acnhapi.com/
  
 Enjoy a walkthrough of this project here: https://youtu.be/34rY1umorJ8
+
+You can read a blog post I wrote about my experience creating this project here: https://medium.com/@emclawson1/structuring-components-my-first-react-project-b6eb0a5b1bca
  
 ## Installation and Available Scripts
  
