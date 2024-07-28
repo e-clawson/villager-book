@@ -5,7 +5,7 @@ VillagerBook is a react API that serves as a companion app to the Animal Crossin
 This app is designed to allow ACNH players a way to keep track of their interactions with the many villager characters in ACNH.
 Villagers display on the homepage with some basic information including name, image, personality, birthday, gender, species, hobby, catch phrase, and saying. Users can search for Villagers by name, and add them to a favorites list, view the favorites list, and add now villagers using a New Villager form.
  
-This App uses data from the ACNH API which can be found here: http://acnhapi.com/
+This App uses data from the ACNH API which can be found here: [http://acnhapi.com/](https://api.nookipedia.com/)
  
 Enjoy a walkthrough of this project here: https://youtu.be/34rY1umorJ8
 
